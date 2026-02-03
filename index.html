@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2cc0d",
+                        "acid-green": "#bfff00",
+                        "pale-pink": "#ffd1dc",
+                        "background-dark": "#000000",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderWidth: {
+                        '3': '3px',
+                        '4': '4px',
+                        '8': '8px',
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: 'Space Grotesk', sans-serif; }
+        .bold-frame { border: 4px solid white; }
+        .heavy-caps { font-weight: 900; letter-spacing: -0.05em; text-transform: uppercase; }
+        .neon-border-green { border: 4px solid #bfff00; }
+        .neon-border-yellow { border: 4px solid #f2cc0d; }
+        .neon-border-pink { border: 4px solid #ffd1dc; }
+    </style>
+</head>
+<body class="bg-background-dark text-white">
+<header class="sticky top-0 z-50 bg-black border-b-4 border-white px-4 md:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl font-bold text-acid-green">pets</span>
+<h2 class="text-2xl heavy-caps text-white">LA GUEULE DU LOUP</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-bold hover:text-acid-green transition-colors" href="#lineup">PROGRAMMATION</a>
+<a class="font-bold hover:text-pale-pink transition-colors" href="#infos">INFOS</a>
+<a class="font-bold hover:text-primary transition-colors" href="#community">COMMUNAUTÉ</a>
+<button class="bg-acid-green border-2 border-white px-6 py-2 font-black uppercase text-sm tracking-wider text-black hover:bg-white transition-colors">
+            BILLETTERIE
+        </button>
+</nav>
+</header>
+<main class="max-w-[1440px] mx-auto">
+<section class="bg-black p-6 md:p-12 border-b-4 border-white">
+<div class="neon-border-green bg-black flex flex-col items-center justify-center py-24 text-center gap-8">
+<div class="w-32 h-32 flex items-center justify-center">
+<span class="material-symbols-outlined text-9xl text-acid-green">pets</span>
+</div>
+<h1 class="text-6xl md:text-9xl heavy-caps leading-none text-white">
+                LA GUEULE<br/>DU LOUP
+            </h1>
+<div class="bg-acid-green text-black px-6 py-3 text-xl md:text-2xl font-bold">
+                22-23 AOÛT 2026 • TISSAC, MORBIHAN
+            </div>
+<div class="flex flex-wrap justify-center gap-4 mt-4">
+<button class="bg-white text-black px-8 py-4 font-black uppercase text-lg border-4 border-acid-green hover:bg-acid-green transition-all">
+                    REJOINDRE LA COMMUNAUTÉ
+                </button>
+<button class="bg-transparent text-white px-8 py-4 font-black uppercase text-lg border-4 border-white hover:bg-white hover:text-black transition-all">
+                    BILLETTERIE
+                </button>
+</div>
+</div>
+</section>
+<section class="bg-black border-b-4 border-white py-12 overflow-hidden">
+<div class="flex justify-around items-center whitespace-nowrap">
+<div class="flex flex-col items-center">
+<span class="text-7xl md:text-9xl heavy-caps text-acid-green">344</span>
+<span class="font-bold text-white">JOURS</span>
+</div>
+<div class="text-7xl md:text-9xl heavy-caps text-white">:</div>
+<div class="flex flex-col items-center">
+<span class="text-7xl md:text-9xl heavy-caps text-pale-pink">12</span>
+<span class="font-bold text-white">HEURES</span>
+</div>
+<div class="text-7xl md:text-9xl heavy-caps text-white">:</div>
+<div class="flex flex-col items-center">
+<span class="text-7xl md:text-9xl heavy-caps text-primary">45</span>
+<span class="font-bold text-white">MINUTES</span>
+</div>
+</div>
+</section>
+<section class="bg-black border-b-4 border-white p-6 md:p-20">
+<div class="max-w-4xl mx-auto flex flex-col gap-12">
+<h2 class="text-4xl md:text-6xl heavy-caps leading-tight text-pale-pink">L'ESPRIT DU FESTIVAL</h2>
+<p class="text-2xl md:text-3xl font-medium leading-relaxed text-white">
+                Une fusion sauvage au cœur du Morbihan. Nous célébrons l'énergie brute, la liberté et les sons qui font vibrer la terre.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="neon-border-pink p-6 bg-zinc-900">
+<span class="material-symbols-outlined text-4xl mb-4 text-pale-pink">vibration</span>
+<h3 class="text-2xl font-black mb-2 uppercase text-white">TECHNO</h3>
+<p class="font-medium text-zinc-400">Des beats sombres et puissants qui résonnent dans la forêt.</p>
+</div>
+<div class="neon-border-pink p-6 bg-zinc-900">
+<span class="material-symbols-outlined text-4xl mb-4 text-pale-pink">settings_input_antenna</span>
+<h3 class="text-2xl font-black mb-2 uppercase text-white">ROCK</h3>
+<p class="font-medium text-zinc-400">L'énergie brute des guitares et la sueur des amplis.</p>
+</div>
+<div class="neon-border-pink p-6 bg-zinc-900">
+<span class="material-symbols-outlined text-4xl mb-4 text-pale-pink">auto_awesome</span>
+<h3 class="text-2xl font-black mb-2 uppercase text-white">INDIE</h3>
+<p class="font-medium text-zinc-400">La douceur des mélodies alternatives sous les étoiles.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-black border-b-4 border-white p-6 md:p-12" id="lineup">
+<h2 class="text-5xl md:text-7xl heavy-caps mb-12 text-primary">LINEUP</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square neon-border-yellow bg-zinc-900/50 flex items-center justify-center p-4">
+<span class="heavy-caps text-center text-primary/40">PROGRAMMATION EN COURS</span>
+</div>
+<div class="aspect-square neon-border-yellow bg-zinc-900/50 flex items-center justify-center p-4">
+<span class="heavy-caps text-center text-primary/40">PROGRAMMATION EN COURS</span>
+</div>
+<div class="aspect-square border-4 border-white bg-primary flex items-center justify-center p-4">
+<span class="heavy-caps text-black text-3xl text-center">ANNONCE BIENTÔT</span>
+</div>
+<div class="aspect-square neon-border-yellow bg-zinc-900/50 flex items-center justify-center p-4">
+<span class="heavy-caps text-center text-primary/40">PROGRAMMATION EN COURS</span>
+</div>
+<div class="aspect-square neon-border-yellow bg-zinc-900/50 flex items-center justify-center p-4">
+<span class="heavy-caps text-center text-primary/40">PROGRAMMATION EN COURS</span>
+</div>
+<div class="aspect-square neon-border-yellow bg-zinc-900/50 flex items-center justify-center p-4">
+<span class="heavy-caps text-center text-primary/40">PROGRAMMATION EN COURS</span>
+</div>
+<div class="aspect-square neon-border-yellow bg-zinc-900/50 flex items-center justify-center p-4">
+<span class="heavy-caps text-center text-primary/40">PROGRAMMATION EN COURS</span>
+</div>
+<div class="aspect-square neon-border-yellow bg-zinc-900/50 flex items-center justify-center p-4">
+<span class="heavy-caps text-center text-primary/40">PROGRAMMATION EN COURS</span>
+</div>
+</div>
+</section>
+<section class="bg-black border-b-4 border-white p-6 md:p-12">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1 space-y-6">
+<h2 class="text-5xl heavy-caps text-acid-green">LE TERRAIN DE JEU</h2>
+<p class="text-xl font-medium text-white">Tissac, un écrin de verdure au cœur du Morbihan. Entre landes et forêts, la meute se rassemble pour deux jours de célébration sauvage.</p>
+<div class="border-4 border-white p-4 bg-acid-green inline-block">
+<span class="font-black uppercase text-black">VOIR SUR LA CARTE</span>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<div class="aspect-video border-4 border-white bg-cover bg-center grayscale hover:grayscale-0 transition-all" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkMTUcw5gsWVZCTIXyEP7Cf016pK8tJxAAKrBlg7mIBzhYplcMK-UIq8GOJjRsUtNDNp_1wyKObPX2prfgEiWxQ0rE75-EnQlirLZhQtV1Blb2WlK-SMUvBoeCo8dLlz8f6qbQ_x8EkSMNksP69QbNX5aZLtHQ1w3fwWdCZUjn3nB9-AUwNZgNn4Z4tdrOhPU4j3G76r8TILSJQmH1xoq2ll5wuxG9-bOSIU7eMgj45PFmSnzmM0kpeqTGAKfybL8EvWGmkwXsPUU');"></div>
+<div class="aspect-video border-4 border-white bg-cover bg-center grayscale hover:grayscale-0 transition-all" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7n4udaFNjXKXZfHVD6gFlUHYkBuJ91Jh-8ZUszZ9bMUxV51css7cOvZ7Kxjvl5hLZya8aOIBqshSbZF6LmfZbz7MT92wZjXzkpd-U6RojPaW0bk302DPFM5UFsOzmbzAP18MXVcDJ38L33dkNUDLQmW8vb6qc49mN5gMORJ8-QDRGeu-zvNBChirzY1fODMpXFFdJ2HQP1ax7mSUChepHRdToLPutUKiYkQWWNSrL3a36tIQBzGYH2rJX_9u8GMcTr0Zkglg4rAE');"></div>
+<div class="aspect-video border-4 border-white bg-cover bg-center grayscale hover:grayscale-0 transition-all" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC138hhlj1UerWoPL7qOYyPkzIIs6UMwtnTrxZJTiip8pZyjkFbLPzqzrNiJXrVcvhWQwTo2jLHILGSdYYZCHsaYIuPxhufpnPYmTwDF8em-bY2sjNLHBYqkYj0T-3A-U7mbw9MvmKnuJvFvv3RghGDMv0Uv2EB-NQnR3t6mO0MTWDcU33_YPQjCjQttbiFMmcCc9SkKYehJzbUch8AALfMFwqST70oG22QDvBH3afO0zn5PLydJVEGoZ1cX3MN3TboRQEBBhCNi2E');"></div>
+<div class="aspect-video border-4 border-white bg-cover bg-center grayscale hover:grayscale-0 transition-all" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbPaiRa5jSmlYVbaLmkcJyRtX1EzEKJQ2HoaqI3aLm_m8PfloaTkhY4bpPtIUO8UtDAAigTKvqC5h7wjaHg4fwp86UnR7_Tehv1s0OtXE5Fy7ZRRkFqYkl-FeAz9cSNuLoo95vVKxrK-ayaJLSMh1ANJf7FliMsmEj_uF81sjNWn4MwHvXN4CnurFA_nYrtjstyzaOylmcRjcfZJGyu73nhHVey6JdVKb7aaqmQXLXgNOE6WTDUp6FRB9s1Hk9RZwmDm50joYBPBo');"></div>
+</div>
+</div>
+</section>
+<section class="bg-black border-b-4 border-white p-6 md:p-12" id="infos">
+<h2 class="text-5xl heavy-caps mb-12 text-white">INFOS PRATIQUES</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="border-4 border-white p-8 bg-zinc-900 space-y-4">
+<span class="material-symbols-outlined text-5xl text-acid-green">directions_bus</span>
+<h3 class="text-2xl font-black uppercase text-white">ACCÈS</h3>
+<p class="font-medium text-zinc-400">Navettes depuis Vannes et Lorient. Parking gratuit sur place.</p>
+</div>
+<div class="border-4 border-white p-8 bg-zinc-900 space-y-4">
+<span class="material-symbols-outlined text-5xl text-pale-pink">camping</span>
+<h3 class="text-2xl font-black uppercase text-white">CAMPING</h3>
+<p class="font-medium text-zinc-400">Zone de bivouac incluse dans le pass 2 jours. Sanitaires sur place.</p>
+</div>
+<div class="border-4 border-white p-8 bg-zinc-900 space-y-4">
+<span class="material-symbols-outlined text-5xl text-primary">restaurant</span>
+<h3 class="text-2xl font-black uppercase text-white">FOOD</h3>
+<p class="font-medium text-zinc-400">Produits locaux, options vegan et bar à cidre artisanal.</p>
+</div>
+<div class="border-4 border-white p-8 bg-zinc-900 space-y-4">
+<span class="material-symbols-outlined text-5xl text-acid-green">volunteer_activism</span>
+<h3 class="text-2xl font-black uppercase text-white">VALEURS</h3>
+<p class="font-medium text-zinc-400">Zéro déchet, bienveillance et respect de la biodiversité.</p>
+</div>
+</div>
+</section>
+<section class="bg-zinc-950 text-white p-6 md:p-24 border-b-4 border-white text-center" id="community">
+<h2 class="text-5xl md:text-8xl heavy-caps mb-12">REJOINS LA MEUTE</h2>
+<div class="flex flex-col md:flex-row justify-center gap-8">
+<a class="border-4 border-white bg-acid-green text-black px-10 py-6 flex items-center justify-center gap-4 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined text-4xl">chat</span>
+<span class="text-2xl font-black uppercase">WHATSAPP</span>
+</a>
+<a class="border-4 border-white bg-pale-pink text-black px-10 py-6 flex items-center justify-center gap-4 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined text-4xl">photo_camera</span>
+<span class="text-2xl font-black uppercase">INSTAGRAM</span>
+</a>
+</div>
+</section>
+<section class="bg-black p-6 md:p-24 text-center">
+<div class="max-w-4xl mx-auto space-y-12">
+<h2 class="text-6xl md:text-9xl heavy-caps text-primary">BILLETTERIE</h2>
+<p class="text-2xl font-bold uppercase text-white border-y-4 border-white py-4">Ouverture des ventes le 1er Mars 2026</p>
+<button class="w-full bg-primary text-black border-4 border-white py-10 text-4xl font-black hover:bg-white transition-all uppercase">
+                RÉSERVER SUR HELLOASSO
+            </button>
+</div>
+</section>
+</main>
+<footer class="bg-black border-t-4 border-white p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex flex-col gap-2">
+<span class="font-black text-2xl uppercase text-acid-green">344 Mètres Seconde</span>
+<p class="text-sm font-bold opacity-60 text-white">Association Loi 1901 • Tissac, France</p>
+</div>
+<div class="flex gap-10">
+<a class="font-black uppercase hover:text-pale-pink transition-colors text-white" href="#">Presse</a>
+<a class="font-black uppercase hover:text-primary transition-colors text-white" href="#">Contact</a>
+<a class="font-black uppercase hover:text-acid-green transition-colors text-white" href="#">Mentions Légales</a>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 border-2 border-white bg-zinc-900 flex items-center justify-center hover:bg-white hover:text-black transition-colors">
+<span class="material-symbols-outlined">share</span>
+</div>
+</div>
+</footer>
+
+</body></html>
